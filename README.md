@@ -11,12 +11,12 @@ for Real-Time Road Accident Prevention
 ai_road_accident/
 ├── preprocessing.py      # Module 1 — Data pipeline (100K+ synthetic dataset)
 ├── eda.py                # Module 2 — 8 premium Plotly visualisations
-├── adaptive_model.py     # Module 3 — Patent-core Adaptive Risk Engine
+├── adaptive_model.py     # Module 3 — Adaptive Risk Engine
 ├── predictive_model.py   # Module 5 — RF | XGBoost | LR + auto best-select
 ├── explainable_ai.py     # Module 6 — SHAP Explainability Engine
 ├── recommendation.py     # Module 7 — Context-aware Prevention Engine
 ├── dashboard.py          # Module 8 — Streamlit Dashboard (main entry point)
-├── documentation.md      # Module 10 — IEEE-style Technical Documentation
+├── documentation         # Module 9 - PPT presentation
 ├── requirements.txt      # Python dependencies
 └── README.md             # This file
 ```
@@ -45,16 +45,16 @@ The first run auto-generates a 100,000-row synthetic dataset. This takes ~30 sec
 |--------|------|-------------|
 | 1 | preprocessing.py | Load/generate data, clean, engineer features |
 | 2 | eda.py | 8 premium Plotly charts |
-| 3 | adaptive_model.py | **Patent Core** — self-adaptive risk scoring |
+| 3 | adaptive_model.py | self-adaptive risk scoring |
 | 5 | predictive_model.py | 3 ML models, auto best-select |
 | 6 | explainable_ai.py | SHAP explainability |
 | 7 | recommendation.py | Rule-based prevention engine |
 | 8 | dashboard.py | 8-tab Streamlit UI |
-| 10 | documentation.md | IEEE-style technical report |
+| 10 | documentation | PPT Presentation |
 
 ---
 
-## ⚙️ Patent Core — Adaptive Risk Formula
+## ⚙️Adaptive Risk Formula
 
 ```
 AccidentRisk = Ws·Speed + Wf·Fatigue + Ww·Weather
@@ -84,12 +84,12 @@ Weights **self-adjust** at runtime based on active hazard context:
 5. **Explainable AI** — SHAP charts + per-prediction report
 6. **Recommendations** — contextual prevention actions
 7. **Live Monitor** — simulated real-time telemetry stream
-8. **Patent Architecture** — system diagram + patent claims
+
 
 ---
 
 ## 🎓 Project Info
 
-- **Type:** MCA Final Year Project (Patent-Oriented)
+- **Type:** MCA Final Year Project 
 - **Stack:** Python · Streamlit · Scikit-learn · XGBoost · SHAP · Plotly
 - **Dataset:** 100,000+ synthetic road telemetry records
